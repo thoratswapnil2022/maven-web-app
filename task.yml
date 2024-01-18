@@ -1,6 +1,7 @@
 ---
-- name: First Play - Docker Image Build
-  hosts: docker
+- hosts: all
+  gather_facts: no
+  remote_user: ansadmin
   tasks:
     - name: Copy Dockerfile
       copy:

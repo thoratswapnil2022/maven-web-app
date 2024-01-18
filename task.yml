@@ -11,15 +11,8 @@
        src: target
        dest: /home/ansadmin
     - name : Build image
-      command: docker build -t ashokit/mavenwebapp .
+      command: docker build -t swapie123/mavenwebapp .
     - name : Push Docker Image
-      command: docker push ashokit/mavenwebapp
-- name: Second Play - K8s Deployment
-  hosts: ekshost
-  tasks:
-   - name: 
-     copy:
-       src: k8s-deploy.yml
-       dest: /home/ansadmin
-   - name : K8S Deployment
-     command: kubectl apply -f k8s-deploy.yml
+	  command: docker login -u swapie123 -p Nishi5432!
+      command: docker push swapie123/mavenwebapp
+	  command: docker run -d -p 9090:9090 swapie123/mavenwebapp

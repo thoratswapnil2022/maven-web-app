@@ -12,9 +12,9 @@
         dest: /home/ansadmin
     - name: Build image
       command: docker build -t swapie123/mavenwebapp .
-    - name: Push Docker Image
-      command: docker login -u swapie123 -p Nishi5432!
     - name: docker login
+      command: docker login -u swapie123 -p Nishi5432
+    - name: docker push
       command: docker push swapie123/mavenwebapp
     - name: docker execute
       command: docker run -d -p 9090:9090 swapie123/mavenwebapp

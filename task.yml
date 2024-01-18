@@ -18,5 +18,5 @@
     - name: docker image push
       command: docker push swapie123/mavenwebapp
     - name: docker run container
-      shell: "docker run -d --name zomato -p 3000:3000 swapie123/mavenwebapp:latest"
+      shell: "sh 'docker run -d --name zomato -p 3000:3000 sushantkapare1717/zomato:latest'"
 ...

@@ -4,15 +4,17 @@
   tasks:
     - name: Copy Dockerfile
       copy:
-       src: Dockerfile
-       dest: /home/ansadmin/
+        src: Dockerfile
+        dest: /home/ansadmin/
     - name: Copy Artifact
       copy:
-       src: target
-       dest: /home/ansadmin
-    - name : Build image
+        src: target
+        dest: /home/ansadmin
+    - name: Build image
       command: docker build -t swapie123/mavenwebapp .
-    - name : Push Docker Image
-	  command: docker login -u swapie123 -p Nishi5432!
+    - name: Push Docker Image
+      command: docker login -u swapie123 -p Nishi5432!
+    - name: docker login
       command: docker push swapie123/mavenwebapp
-	  command: docker run -d -p 9090:9090 swapie123/mavenwebapp
+    - name: docker execute
+      command: docker run -d -p 9090:9090 swapie123/mavenwebapp

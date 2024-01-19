@@ -18,5 +18,5 @@
     - name: docker image push
       command: docker push swapie123/mavenwebapp
     - name: docker run container
-      command: docker run -d -p 9090:9090 swapie123/mavenwebapp
+      command: docker run -d -p 8080:8080 swapie123/mavenwebapp
 ...

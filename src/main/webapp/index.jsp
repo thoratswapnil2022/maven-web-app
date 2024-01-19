@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is Swapnil's Simple Static Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Web Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h2><marquee>Welcome to My Website : SWAPNIL</marquee> </h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <h4><font color="red">This is a Swapnil's static website.</font></h4>
-        </section>
-    </main>
-    <footer>
-        <p>My Simple Static Website</p>
-    </footer>
+    <div class="container">
+        <h2>Contact</h2>
+        <p>
+            +91 99000 99000 
+        </p>
+        <h2>Contact Information</h2>
+        <p>
+            You can contact me at <a href="mailto:swapnil_thorat@gmail.com">swapnil_thorat@gmail.com</a>.
+        </p>
+    </div>
 </body>
 </html>

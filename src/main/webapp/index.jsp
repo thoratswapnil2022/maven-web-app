@@ -31,7 +31,7 @@
     <div class="container">
         <h2>Contact</h2>
         <p>
-            +91 99000 99000 
+            +91 98900 98900 
         </p>
         <h2>Contact Information</h2>
         <p>

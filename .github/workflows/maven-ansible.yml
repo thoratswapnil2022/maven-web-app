@@ -1,5 +1,4 @@
 name: Maven Build with Ansible
-//Code is added
 on:
   push:
     branches:
@@ -36,4 +35,5 @@ jobs:
 
       - name: Run Ansible Playbook
         run: ansible-playbook task.yml
+
 

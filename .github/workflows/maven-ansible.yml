@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
 
     steps:
       - name: Checkout source code
@@ -36,3 +36,4 @@ jobs:
 
       - name: Run Ansible Playbook
         run: ansible-playbook task.yml
+

@@ -1,5 +1,4 @@
 name: Maven Build with Ansible
-
 on:
   push:
     branches:

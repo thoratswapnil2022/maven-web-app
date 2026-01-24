@@ -3,7 +3,7 @@ name: Maven Build with Ansible
 on:
   push:
     branches:
-      - main
+      - master
       - my_new
   pull_request:
 

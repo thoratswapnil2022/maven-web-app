@@ -1,6 +1,6 @@
-FROM tomcat:8.0.20-jre8
+FROM tomcat:8.5-jdk8
 
-MAINTAINER Ashok <ashok@oracle.com>
+MAINTAINER Swapnil <swapnil@gmail.com>
 
 EXPOSE 8080
 

@@ -1,12 +1,15 @@
-- hosts: localhost
-  connection: local
-  gather_facts: false
+---
+- name: First Play - Docker Image Build
+  hosts: docker
   tasks:
-    - name: Build image
+    - name: Copy Dockerfile
+      copy:
+       src: Dockerfile
+       dest: /home/ansadmin/
+    - name: Copy Artifact
+      copy:
+       src: target
+       dest: /home/ansadmin
+    - name : Build image
       command: docker build -t swapie123/mavenwebapp .
-    - name: docker login
-      command: docker login -u swapie123 -p Nishi5432!
-    - name: docker image push
-      command: docker push swapie123/mavenwebapp
-    - name: docker run container
-      command: docker run -d -p 8081:8080 swapie123/mavenwebapp
+...

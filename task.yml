@@ -1,16 +1,7 @@
----
-- hosts: all
-  gather_facts: no
-  remote_user: ansadmin
+- hosts: localhost
+  connection: local
+  gather_facts: false
   tasks:
-    - name: Copy Dockerfile
-      copy:
-        src: Dockerfile
-        dest: /home/ansadmin/
-    - name: Copy Artifact
-      copy:
-        src: target
-        dest: /home/ansadmin
     - name: Build image
       command: docker build -t swapie123/mavenwebapp .
     - name: docker login
@@ -18,5 +9,4 @@
     - name: docker image push
       command: docker push swapie123/mavenwebapp
     - name: docker run container
-      command: docker run -d -p 8080:8080 swapie123/mavenwebapp
-...
+      command: docker run -d -p 8081:8080 swapie123/mavenwebapp
